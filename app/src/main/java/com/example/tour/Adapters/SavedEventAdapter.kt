@@ -41,3 +41,6 @@ class SavedEventAdapter(val eventArray: ArrayList<Saved_Event_dataclass>):
         holder.eventUnsaved.setImageResource(item.unSaved)
     }
 }
+
+
+
