@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--ye dekhna recycler view k kesi item cclick kasy krty hain
+    for example mountain , beach per click sy kasy next jana
+    category adapter open kro
+    -->
+
+    <!--bs itna eska round add library and use radius theek
+    services recycler view mn  color aur length change ha har button ki us ko
+    kasy krna esko normaly jesy recycler view lgay wesy krna
+    ek choti se condition lgy gi adapter my jo item select ho
+    oska color orange krna click per wo after adapter dekhy ly gy
+     remaining code check kr lain-->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imageView_visited"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_135sdp"
+        android:src="@drawable/visited"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/saved_visited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/saved_image"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_visited"
+        app:layout_constraintTop_toTopOf="@+id/imageView_visited" />
+
+    <ImageView
+        android:id="@+id/star_visit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:src="@drawable/stars"
+        app:layout_constraintStart_toStartOf="@+id/imageView_visited"
+        app:layout_constraintTop_toTopOf="@+id/imageView_visited" />
+
+    <TextView
+        android:id="@+id/num_star_visited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.7"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/star_visit"
+        app:layout_constraintStart_toEndOf="@+id/star_visit"
+        app:layout_constraintTop_toTopOf="@+id/star_visit" />
+
+    <TextView
+        android:id="@+id/visit_place_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kanchenjungha"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_visited"
+        app:layout_constraintStart_toStartOf="@+id/imageView_visited" />
+
+    <ImageView
+        android:id="@+id/map_visited"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:src="@drawable/white_map"
+        app:layout_constraintStart_toStartOf="@+id/visit_place_name"
+        app:layout_constraintTop_toBottomOf="@+id/visit_place_name" />
+
+    <TextView
+        android:id="@+id/map_name_visited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rangpur, Bangladesh"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_3sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/map_visited"
+        app:layout_constraintStart_toEndOf="@+id/map_visited"
+        app:layout_constraintTop_toTopOf="@+id/map_visited" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

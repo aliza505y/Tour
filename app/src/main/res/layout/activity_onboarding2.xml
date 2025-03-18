@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding2">
+
+    <TextView
+        android:id="@+id/skip_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/onboard_2_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboard2"
+        android:layout_marginTop="@dimen/_80sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/make_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Make Memories That Last\na Lifetime"
+        android:textSize="@dimen/_23sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/onboard_2_image"
+        app:layout_constraintStart_toStartOf="@+id/onboard_2_image"
+        app:layout_constraintTop_toBottomOf="@+id/onboard_2_image" />
+
+    <TextView
+        android:id="@+id/onboard_2_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet consectetur. Mi\nultricies ultrices fermentum a. Duis neque\nlectus pharetra ac sed lorem."
+        android:textColor="#696969"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="@+id/make_memory"
+        app:layout_constraintTop_toBottomOf="@+id/make_memory" />
+
+    <ImageView
+        android:id="@+id/dot_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dot2"
+        android:layout_marginTop="@dimen/_90sdp"
+        app:layout_constraintStart_toStartOf="@+id/onboard_2_description"
+        app:layout_constraintTop_toBottomOf="@+id/onboard_2_description" />
+
+    <ImageView
+        android:id="@+id/circle_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle2"
+        android:layout_marginEnd="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/dot_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dot_2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tour</string>
+    <string name="verify"><b>Resend OTP</b> (12:00)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_hotel">Lorem ipsum dolor sit amet, consectetur adipiscing\n
+elit. Arcu, arcu dictumst habitant vel ut et\n pellentesque. Ut in egestas blandit netus in\n
+scelerisque. Eget lectus ultrices pellentesque id.\n
+Read More...</string>
+
+</resources>

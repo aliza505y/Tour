@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_270sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="-7dp"
+            tools:layout_editor_absoluteY="2dp">
+
+            <ImageView
+                android:id="@+id/room_image"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/room_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/double_bed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Deluxe Double Bed With Balcony"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/room_image" />
+
+            <ImageView
+                android:id="@+id/room_icon"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/roooom"
+                app:layout_constraintStart_toStartOf="@+id/double_bed"
+                app:layout_constraintTop_toBottomOf="@+id/double_bed" />
+
+            <TextView
+                android:id="@+id/room_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="01 Room"
+                android:textColor="#696969"
+                app:layout_constraintBottom_toBottomOf="@+id/room_icon"
+                app:layout_constraintStart_toEndOf="@+id/room_icon"
+                app:layout_constraintTop_toTopOf="@+id/room_icon" />
+
+            <ImageView
+                android:id="@+id/user"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/user"
+                app:layout_constraintStart_toStartOf="@+id/room_icon"
+                app:layout_constraintTop_toBottomOf="@+id/room_icon" />
+
+            <TextView
+                android:id="@+id/guests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="02 Guests"
+                android:textColor="#696969"
+                app:layout_constraintBottom_toBottomOf="@+id/user"
+                app:layout_constraintStart_toEndOf="@+id/user"
+                app:layout_constraintTop_toTopOf="@+id/user" />
+
+            <ImageView
+                android:id="@+id/no_smooking_image"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:src="@drawable/nooosmooking"
+                app:layout_constraintStart_toStartOf="@+id/user"
+                app:layout_constraintTop_toBottomOf="@+id/user" />
+
+            <TextView
+                android:id="@+id/no_smooking_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Non-Smooking  Room"
+                android:textColor="#696969"
+                app:layout_constraintBottom_toBottomOf="@+id/no_smooking_image"
+                app:layout_constraintStart_toEndOf="@+id/no_smooking_image"
+                app:layout_constraintTop_toTopOf="@+id/no_smooking_image" />
+
+            <TextView
+                android:id="@+id/dollar_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="$85"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/double_bed" />
+
+            <TextView
+                android:id="@+id/room_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(For 01Night/Room)"
+                android:textColor="#696969"
+                app:layout_constraintEnd_toEndOf="@+id/dollar_room"
+                app:layout_constraintTop_toBottomOf="@+id/dollar_room" />
+
+            <TextView
+                android:id="@+id/more_details_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="View More Details>"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/select_room"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:background="@drawable/background"
+                android:backgroundTint="#F75D37"
+                android:text="Select Room"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

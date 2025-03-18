@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chat_profile_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:src="@drawable/ishtiaq"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ishtiaq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="Ishtiaq Zaman"
+        android:textSize="@dimen/_13sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/chat_profile_image"
+        app:layout_constraintTop_toTopOf="@+id/chat_profile_image" />
+
+    <TextView
+        android:id="@+id/how_are_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello Raju How are you?"
+        app:layout_constraintStart_toStartOf="@+id/ishtiaq"
+        app:layout_constraintTop_toBottomOf="@+id/ishtiaq" />
+
+    <TextView
+        android:id="@+id/chat_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="20Sep 2022"
+        android:textColor="#9D9D9D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ishtiaq" />
+
+    <TextView
+        android:id="@+id/chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:45 PM"
+        android:textColor="#9D9D9D"
+        app:layout_constraintEnd_toEndOf="@+id/chat_date"
+        app:layout_constraintTop_toBottomOf="@+id/chat_date" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

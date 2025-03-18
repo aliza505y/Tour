@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forgot">
+
+    <ImageView
+        android:id="@+id/back_arrow_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left_arrow"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot"
+        android:layout_marginStart="@dimen/_100sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/back_arrow_forgot"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow_forgot"
+        app:layout_constraintTop_toTopOf="@+id/back_arrow_forgot" />
+
+    <ImageView
+        android:id="@+id/forgot_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/forgot"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintEnd_toEndOf="@+id/forgot"
+        app:layout_constraintStart_toStartOf="@+id/forgot"
+        app:layout_constraintTop_toBottomOf="@+id/forgot" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintEnd_toEndOf="@+id/forgot_image"
+        app:layout_constraintStart_toStartOf="@+id/forgot_image"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_image" />
+
+    <TextView
+        android:id="@+id/do_not_worry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Don’t worry! it happens. Please enter phone\nnumber associated with your account"
+        android:textColor="#696969"
+        app:layout_constraintEnd_toEndOf="@+id/forgot_password"
+        app:layout_constraintStart_toStartOf="@+id/forgot_password"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_password" />
+
+
+    <TextView
+        android:id="@+id/enter_number_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your mobile number"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginStart="@dimen/_45sdp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/do_not_worry" />
+
+    <EditText
+        android:id="@+id/num_880_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@drawable/down_arrow"
+        android:drawablePadding="@dimen/_10sdp"
+        android:text="+880"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@+id/enter_number_forgot"
+        app:layout_constraintTop_toBottomOf="@+id/enter_number_forgot" />
+
+    <EditText
+        android:id="@+id/editText_forgot"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:background="@drawable/background"
+        android:hint="291846876"
+        android:paddingStart="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/num_880_forgot"
+        app:layout_constraintStart_toEndOf="@+id/num_880_forgot"
+        app:layout_constraintTop_toTopOf="@+id/num_880_forgot"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:src="@drawable/tick"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/editText_forgot"
+        app:layout_constraintEnd_toEndOf="@+id/editText_forgot" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/send_otp_code"
+        android:layout_width="@dimen/_233sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/background"
+        android:backgroundTint="#F75D37"
+        android:text="Send OTP code"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

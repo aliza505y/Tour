@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reset">
+
+    <ImageView
+        android:id="@+id/back_arrow_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left_arrow"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_marginStart="@dimen/_100sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/back_arrow_reset"
+        app:layout_constraintStart_toEndOf="@+id/back_arrow_reset"
+        app:layout_constraintTop_toTopOf="@+id/back_arrow_reset" />
+
+    <ImageView
+        android:id="@+id/reset_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reset"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintEnd_toEndOf="@+id/reset"
+        app:layout_constraintStart_toStartOf="@+id/reset"
+        app:layout_constraintTop_toBottomOf="@+id/reset" />
+
+    <TextView
+        android:id="@+id/reset_your_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset your password"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/reset_image"
+        app:layout_constraintStart_toStartOf="@+id/reset_image"
+        app:layout_constraintTop_toBottomOf="@+id/reset_image" />
+
+    <TextView
+        android:id="@+id/rest_old_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now you can rest your old password"
+        android:textColor="#696969"
+        app:layout_constraintEnd_toEndOf="@+id/reset_your_password"
+        app:layout_constraintStart_toStartOf="@+id/reset_your_password"
+        app:layout_constraintTop_toBottomOf="@+id/reset_your_password" />
+
+    <TextView
+        android:id="@+id/enter_new_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter new password"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rest_old_password" />
+
+    <EditText
+        android:id="@+id/new_password"
+        android:layout_width="@dimen/_233sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/background"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="     * * * * * * * * * * *"
+        app:layout_constraintStart_toStartOf="@+id/enter_new_password"
+        app:layout_constraintTop_toBottomOf="@+id/enter_new_password" />
+
+    <ImageView
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:src="@drawable/show"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/new_password"
+        app:layout_constraintEnd_toEndOf="@+id/new_password" />
+
+    <TextView
+        android:id="@+id/confirm_new_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm new password"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="@+id/new_password"
+        app:layout_constraintTop_toBottomOf="@+id/new_password" />
+
+    <EditText
+        android:id="@+id/confirmed_new_password"
+        android:layout_width="@dimen/_233sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/background"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="      * * * * * * * * * * *"
+        app:layout_constraintStart_toStartOf="@+id/confirm_new_password"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_new_password" />
+
+    <ImageView
+        android:layout_width="@dimen/_15sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:src="@drawable/show"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/confirmed_new_password"
+        app:layout_constraintEnd_toEndOf="@+id/confirmed_new_password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_button"
+        android:layout_width="@dimen/_233sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/background"
+        android:backgroundTint="#F75D37"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="@+id/confirmed_new_password"
+        app:layout_constraintStart_toStartOf="@+id/confirmed_new_password"
+        app:layout_constraintTop_toBottomOf="@+id/confirmed_new_password" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfile">
+
+
+    <ImageView
+        android:id="@+id/back_arrow_myprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:src="@drawable/left_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/my_profile_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_85sdp"
+            android:text="My Profile"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/back_arrow_myprofile"
+            app:layout_constraintStart_toEndOf="@+id/back_arrow_myprofile"
+            app:layout_constraintTop_toTopOf="@+id/back_arrow_myprofile" />
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/myprofile_image"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/_30sdp"
+               android:src="@drawable/profile_image"
+               app:layout_constraintEnd_toEndOf="@+id/my_profile_activity"
+               app:layout_constraintStart_toStartOf="@+id/my_profile_activity"
+               app:layout_constraintTop_toBottomOf="@+id/my_profile_activity" />
+
+               <ImageView
+                   android:id="@+id/edit_profile_image"
+                   android:layout_width="@dimen/_25sdp"
+                   android:layout_height="@dimen/_25sdp"
+                   android:src="@drawable/edit2"
+                   android:scaleType="centerInside"
+                   android:background="@drawable/edit_background"
+                   android:backgroundTint="#F75D37"
+                   app:layout_constraintBottom_toBottomOf="@+id/myprofile_image"
+                   app:layout_constraintEnd_toEndOf="@+id/myprofile_image" />
+
+                 <TextView
+                     android:id="@+id/name_profile"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Raju Ahamed"
+                     android:textSize="@dimen/_16ssp"
+                     android:layout_marginTop="@dimen/_10sdp"
+                     android:textStyle="bold"
+                     app:layout_constraintEnd_toEndOf="@+id/myprofile_image"
+                     app:layout_constraintStart_toStartOf="@+id/myprofile_image"
+                     app:layout_constraintTop_toBottomOf="@+id/myprofile_image" />
+
+
+                 <TextView
+                     android:id="@+id/premium_user"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:drawableStart="@drawable/premium"
+                     android:drawablePadding="@dimen/_4sdp"
+                     android:text="Premium User"
+                     android:paddingStart="@dimen/_6sdp"
+                     android:textColor="#9D9D9D"
+                     android:layout_marginTop="@dimen/_5sdp"
+                     android:textSize="@dimen/_13sdp"
+                     android:textStyle="bold"
+                     app:layout_constraintEnd_toEndOf="@+id/name_profile"
+                     app:layout_constraintStart_toStartOf="@+id/name_profile"
+                     app:layout_constraintTop_toBottomOf="@+id/name_profile" />
+
+                 <TextView
+                     android:id="@+id/myaddress"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="My Address: Uttara, Dhaka-1230"
+                     android:textStyle="bold"
+                     android:layout_marginTop="@dimen/_5sdp"
+                     app:layout_constraintEnd_toEndOf="@+id/premium_user"
+                     app:layout_constraintStart_toStartOf="@+id/premium_user"
+                     app:layout_constraintTop_toBottomOf="@+id/premium_user" />
+
+                     <TextView
+                         android:id="@+id/edittext_profile"
+                         android:layout_width="@dimen/_280sdp"
+                         android:layout_height="@dimen/_42sdp"
+                         android:layout_marginTop="@dimen/_20sdp"
+                         android:background="@drawable/backgroud_white"
+                         android:gravity="center_vertical"
+                         android:paddingStart="@dimen/_45sdp"
+                         android:text="Edit profile"
+                         android:textStyle="bold"
+                         app:layout_constraintEnd_toEndOf="@+id/myaddress"
+                         app:layout_constraintStart_toStartOf="@+id/myaddress"
+                         app:layout_constraintTop_toBottomOf="@+id/myaddress" />
+
+                     <ImageView
+                         android:id="@+id/edit_profiletext_image"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/edit1"
+                         android:layout_marginStart="@dimen/_20sdp"
+                         app:layout_constraintTop_toTopOf="@+id/edittext_profile"
+                         app:layout_constraintBottom_toBottomOf="@+id/edittext_profile"
+                         app:layout_constraintStart_toStartOf="@+id/edittext_profile" />
+
+                     <ImageView
+                         android:id="@+id/right_arrow_profile"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/right_arrow"
+                         android:paddingEnd="@dimen/_15sdp"
+                         app:layout_constraintBottom_toBottomOf="@+id/edittext_profile"
+                         app:layout_constraintEnd_toEndOf="@+id/edittext_profile"
+                         app:layout_constraintTop_toTopOf="@+id/edittext_profile" />
+
+                     <TextView
+                         android:id="@+id/track_booking"
+                         android:layout_width="@dimen/_280sdp"
+                         android:layout_height="@dimen/_42sdp"
+                         android:layout_marginTop="@dimen/_10sdp"
+                         android:background="@drawable/backgroud_white"
+                         android:gravity="center_vertical"
+                         android:paddingStart="@dimen/_45sdp"
+                         android:text="Track My Bookings"
+                         android:textStyle="bold"
+                         app:layout_constraintEnd_toEndOf="@+id/edittext_profile"
+                         app:layout_constraintStart_toStartOf="@+id/edittext_profile"
+                         app:layout_constraintTop_toBottomOf="@+id/edittext_profile" />
+
+                     <ImageView
+                         android:id="@+id/track_image"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/edit1"
+                         android:layout_marginStart="@dimen/_20sdp"
+                         app:layout_constraintTop_toTopOf="@+id/track_booking"
+                         app:layout_constraintBottom_toBottomOf="@+id/track_booking"
+                         app:layout_constraintStart_toStartOf="@+id/track_booking" />
+
+                     <ImageView
+                         android:id="@+id/right_arrow_tracking"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/right_arrow"
+                         android:paddingEnd="@dimen/_15sdp"
+                         app:layout_constraintBottom_toBottomOf="@+id/track_booking"
+                         app:layout_constraintEnd_toEndOf="@+id/track_booking"
+                         app:layout_constraintTop_toTopOf="@+id/track_booking" />
+
+
+                     <TextView
+                         android:id="@+id/my_history"
+                         android:layout_width="@dimen/_280sdp"
+                         android:layout_height="@dimen/_42sdp"
+                         android:layout_marginTop="@dimen/_10sdp"
+                         android:background="@drawable/backgroud_white"
+                         android:gravity="center_vertical"
+                         android:paddingStart="@dimen/_45sdp"
+                         android:text="My History"
+                         android:textStyle="bold"
+                         app:layout_constraintEnd_toEndOf="@+id/track_booking"
+                         app:layout_constraintStart_toStartOf="@+id/track_booking"
+                         app:layout_constraintTop_toBottomOf="@+id/track_booking" />
+
+                     <ImageView
+                         android:id="@+id/history_image"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/fluent_history"
+                         android:layout_marginStart="@dimen/_20sdp"
+                         app:layout_constraintTop_toTopOf="@+id/my_history"
+                         app:layout_constraintBottom_toBottomOf="@+id/my_history"
+                         app:layout_constraintStart_toStartOf="@+id/my_history" />
+
+                     <ImageView
+                         android:id="@+id/right_arrow_history"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/right_arrow"
+                         android:paddingEnd="@dimen/_15sdp"
+                         app:layout_constraintBottom_toBottomOf="@+id/my_history"
+                         app:layout_constraintEnd_toEndOf="@+id/my_history"
+                         app:layout_constraintTop_toTopOf="@+id/my_history" />
+
+
+                     <TextView
+                         android:id="@+id/packing_tips"
+                         android:layout_width="@dimen/_280sdp"
+                         android:layout_height="@dimen/_42sdp"
+                         android:layout_marginTop="@dimen/_10sdp"
+                         android:background="@drawable/backgroud_white"
+                         android:gravity="center_vertical"
+                         android:paddingStart="@dimen/_45sdp"
+                         android:text="Packing Tips"
+                         android:textStyle="bold"
+                         app:layout_constraintEnd_toEndOf="@+id/my_history"
+                         app:layout_constraintStart_toStartOf="@+id/my_history"
+                         app:layout_constraintTop_toBottomOf="@+id/my_history" />
+
+                     <ImageView
+                         android:id="@+id/packing_tips_image"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/tips"
+                         android:layout_marginStart="@dimen/_20sdp"
+                         app:layout_constraintTop_toTopOf="@+id/packing_tips"
+                         app:layout_constraintBottom_toBottomOf="@+id/packing_tips"
+                         app:layout_constraintStart_toStartOf="@+id/packing_tips" />
+
+                     <ImageView
+                         android:id="@+id/right_arrow_packing_tips"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/right_arrow"
+                         android:paddingEnd="@dimen/_15sdp"
+                         app:layout_constraintBottom_toBottomOf="@+id/packing_tips"
+                         app:layout_constraintEnd_toEndOf="@+id/packing_tips"
+                         app:layout_constraintTop_toTopOf="@+id/packing_tips" />
+
+
+                     <TextView
+                         android:id="@+id/payment_method"
+                         android:layout_width="@dimen/_280sdp"
+                         android:layout_height="@dimen/_42sdp"
+                         android:layout_marginTop="@dimen/_10sdp"
+                         android:background="@drawable/backgroud_white"
+                         android:gravity="center_vertical"
+                         android:paddingStart="@dimen/_45sdp"
+                         android:text="Payment Method"
+                         android:textStyle="bold"
+                         app:layout_constraintEnd_toEndOf="@+id/packing_tips"
+                         app:layout_constraintStart_toStartOf="@+id/packing_tips"
+                         app:layout_constraintTop_toBottomOf="@+id/packing_tips" />
+
+                     <ImageView
+                         android:id="@+id/payment_tips_image"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/dollar_sign"
+                         android:layout_marginStart="@dimen/_20sdp"
+                         app:layout_constraintTop_toTopOf="@+id/payment_method"
+                         app:layout_constraintBottom_toBottomOf="@+id/payment_method"
+                         app:layout_constraintStart_toStartOf="@+id/payment_method" />
+
+                     <ImageView
+                         android:id="@+id/right_arrow_payment_method"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/right_arrow"
+                         android:paddingEnd="@dimen/_15sdp"
+                         app:layout_constraintBottom_toBottomOf="@+id/payment_method"
+                         app:layout_constraintEnd_toEndOf="@+id/payment_method"
+                         app:layout_constraintTop_toTopOf="@+id/payment_method" />
+
+                     <TextView
+                         android:id="@+id/help_center"
+                         android:layout_width="@dimen/_280sdp"
+                         android:layout_height="@dimen/_42sdp"
+                         android:layout_marginTop="@dimen/_10sdp"
+                         android:background="@drawable/backgroud_white"
+                         android:gravity="center_vertical"
+                         android:paddingStart="@dimen/_45sdp"
+                         android:text="Help Center"
+                         android:textStyle="bold"
+                         app:layout_constraintEnd_toEndOf="@+id/payment_method"
+                         app:layout_constraintStart_toStartOf="@+id/payment_method"
+                         app:layout_constraintTop_toBottomOf="@+id/payment_method" />
+
+                     <ImageView
+                         android:id="@+id/help_center_image"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/help_circle"
+                         android:layout_marginStart="@dimen/_20sdp"
+                         app:layout_constraintTop_toTopOf="@+id/help_center"
+                         app:layout_constraintBottom_toBottomOf="@+id/help_center"
+                         app:layout_constraintStart_toStartOf="@+id/help_center" />
+
+                     <ImageView
+                         android:id="@+id/right_arrow_help_center"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/right_arrow"
+                         android:paddingEnd="@dimen/_15sdp"
+                         app:layout_constraintBottom_toBottomOf="@+id/help_center"
+                         app:layout_constraintEnd_toEndOf="@+id/help_center"
+                         app:layout_constraintTop_toTopOf="@+id/help_center" />
+
+                     <TextView
+                         android:id="@+id/legal_info"
+                         android:layout_width="@dimen/_280sdp"
+                         android:layout_height="@dimen/_42sdp"
+                         android:layout_marginTop="@dimen/_10sdp"
+                         android:background="@drawable/backgroud_white"
+                         android:gravity="center_vertical"
+                         android:paddingStart="@dimen/_45sdp"
+                         android:text="Legal Info"
+                         android:textStyle="bold"
+                         app:layout_constraintEnd_toEndOf="@+id/help_center"
+                         app:layout_constraintStart_toStartOf="@+id/help_center"
+                         app:layout_constraintTop_toBottomOf="@+id/help_center" />
+
+                     <ImageView
+                         android:id="@+id/legal_info_image"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/info"
+                         android:layout_marginStart="@dimen/_20sdp"
+                         app:layout_constraintTop_toTopOf="@+id/legal_info"
+                         app:layout_constraintBottom_toBottomOf="@+id/legal_info"
+                         app:layout_constraintStart_toStartOf="@+id/legal_info" />
+
+                     <ImageView
+                         android:id="@+id/right_arrow_legal_info"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/right_arrow"
+                         android:paddingEnd="@dimen/_15sdp"
+                         app:layout_constraintBottom_toBottomOf="@+id/legal_info"
+                         app:layout_constraintEnd_toEndOf="@+id/legal_info"
+                         app:layout_constraintTop_toTopOf="@+id/legal_info"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
